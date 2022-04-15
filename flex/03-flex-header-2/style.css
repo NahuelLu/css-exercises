@@ -12,6 +12,7 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display:flex;
 }
 
 .profile-image {
@@ -41,8 +42,29 @@ a {
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
+  white-space: nowrap; /*Un pequeño truco para evitar que el texto al ser oprimido tenga que pasarse a otra linea*/
 }
 
 ul {
   list-style-type: none;
 }
+
+/*Adding new selectors*/
+.links{
+  display: flex;
+  /*justify-content: space-between; Esto no funcionaria porque la clase links osea el ul se moldea al width de los tags a
+  /*Por lo tanto mejor hacemos un gap entre los tags a*/
+  gap:15px;
+}
+
+/*Una solución*/
+.notifications{
+  margin-left:auto;
+}
+/*Otra solución*/
+/*
+.links{
+  flex:auto;
+}
+*/
+/*Ambos son soluciones pero no se muy bien cual de los 2 seria mejor*/
