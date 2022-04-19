@@ -26,3 +26,64 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+
+/*Solution*/
+
+body{
+  display:flex;
+  flex-direction: column;
+  /*justify-content: space-between;
+  Esto no funciona para esta pagina porque ahora ya no hay espacio en blanco entre los divs footer header container
+  En el anterior ejemplo podiamos hacerlo porque el fondo era blanco y usar el space-between servia pero ahora que
+  queremos que el container tome todo el espacio disponible del main axis no,por lo cual ahora
+  es buen momento(y creo que haré esto mayormente para evitar esto xD)
+  Es hacer que el container como es flex-item puedo hacer tome todo el espacio disponible con 
+  el flex-grow=1
+  */
+}
+.header{
+  font-size: 35px;
+  display:flex;
+  align-items: center;
+  font-weight: 700;
+  padding-left: 15px;
+}
+/*side-cards*/
+.container{
+  display:flex;
+  flex:auto;
+}
+.side-cards{
+  display:flex;
+  flex-wrap: wrap;
+  gap:30px;
+  padding:40px;
+}
+.card{
+  width:350px;
+  padding:15px;
+}
+/*Sidebar*/
+.sidebar{
+  flex-shrink: 0;
+  padding-left:15px;
+}
+ul{
+  list-style: none;
+  padding-left:0px;
+}
+a{
+  text-decoration: none;
+  font-size: 25px;
+  color:white;
+}
+li{
+  padding-bottom: 10px;
+}
+/*footer*/
+.footer{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  
+}
