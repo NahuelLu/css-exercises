@@ -24,3 +24,15 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+.types-plants{
+  display: flex;
+  justify-content: center;
+  gap:35px;
+}
+.type-plant{
+  max-width: 250px;
+}
+p{
+  text-align: center;
+}
